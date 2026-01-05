@@ -1,0 +1,71 @@
+# Project name and description
+name: music_app
+description: "A new Flutter project."
+
+# Prevent publishing to pub.dev
+publish_to: 'none'
+
+# App version
+version: 1.0.0+1
+
+# Dart SDK version compatibility
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+
+# Main project dependencies
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # WebView dependencies (latest compatible versions)
+  webview_flutter: ^4.9.0
+
+
+
+  # iOS-style icons
+  cupertino_icons: ^1.0.8
+
+# Development-only dependencies
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+  on_audio_query: ^2.9.0
+  sqflite: ^2.3.0
+  path_provider: ^2.1.2
+  path: ^1.9.0
+  permission_handler: ^11.1.0
+  just_audio: ^0.9.36           # 🎵 To play songs
+  volume_controller: ^2.0.1
+  marquee: ^2.3.0
+
+# Configuration for flutter_launcher_icons
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "Assets/icon/icon_app.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+# Flutter-specific project settings
+flutter:
+  uses-material-design: true
+
+  # List of assets
+  assets:
+    - Assets/images/
+    - Assets/icon/icon_app.png
+
+# Fonts section (example)
+# fonts:
+#   - family: Schyler
+#     fonts:
+#       - asset: fonts/Schyler-Regular.ttf
+#       - asset: fonts/Schyler-Italic.ttf
+#         style: italic
+#   - family: TrajanPro
+#     fonts:
+#       - asset: fonts/TrajanPro.ttf
+#       - asset: fonts/TrajanPro_Bold.ttf
+#         weight: 700
